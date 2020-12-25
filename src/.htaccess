@@ -1,0 +1,8 @@
+AuthUserFile /virtual/fkt/public_html/kiki.prodevice.jp/.htpasswd
+AuthGroupFile /dev/null
+AuthName MembersOnly
+AuthType Basic
+
+<Limit GET POST>
+require valid-user
+</Limit>

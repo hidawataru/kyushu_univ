@@ -1,0 +1,115 @@
+#attention {
+	border: 1px #f00 solid;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+#attention p.msg {
+	font-size: 110%;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+#attention ul {
+	list-style-type: square;
+	margin: 10px 20px;
+}
+#timetable_box,
+#form_box,
+#calendar_box {
+	float:left;
+	margin-right:50px;
+	border:5px;
+}
+
+/* カレンダー */
+table.rsv_calendar {
+	width:180px;
+	margin-bottom:30px;
+	margin-right:50px;
+	float:left;
+}
+table.rsv_calendar caption{
+	font-weight:bold;
+	margin-bottom:5px;
+	caption-side: top;
+}
+table.rsv_calendar td,
+table.rsv_calendar th {
+	text-align:center;
+}
+table.rsv_calendar td#today {
+	background-color:#eee; /* 今日の背景色 */
+}
+table.rsv_calendar td#current {
+	background-color:#ffebae; /* クリックした日の背景色 */
+}
+table.rsv_calendar td input { /* カレンダー内inputボタン */
+	background: none;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+	color: #09c;
+	text-decoration: underline;
+}
+table.rsv_calendar td input:hover {
+	color: #8bc; /* リンクホバー色 */
+	background: none;
+}
+
+/* タイムテーブル */
+table#timetable{
+	border-collapse: separate;
+	border-spacing: 0px;
+	border: 1px solid #eee;
+}
+table#timetable th {
+	padding: 3px;
+	background-color: #bfeefa;/*列見出し指定場所1*/
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-weight:bold;
+	text-align:center;
+}
+table#timetable td {
+	padding: 3px;
+	border: 1px solid #eee;
+}
+table#timetable td input { /* タイムテーブル内inputボタン */
+	width:18px;
+	height:18px;
+	padding:0;
+	margin:3px 3px 0 0;
+	line-height:0;
+	text-align:center;
+	vertical-align:middle;
+	float:left;
+	color: #F00;
+}
+table#timetable td.exist{ /* データが存在するセル */
+	background-color:#ff9191; /* 背景色 */
+	font-size: 0.8em;
+}
+table#timetable td.exist img{
+	float:left;
+	margin-top:3px;
+}
+table#timetable th#origin{ /* 見出し部分 */
+	width:20px;
+	left: 0;
+	background-color: #bfeefa;
+	/*列見出し指定場所2*/
+	/*height:20px;*/
+}
+table#timetable th.cts {
+	width:70px; /* 中身の横幅 */
+	/* background-color: #00CCFF; */
+}
+table#timetable tbody tr {
+	/*height:50px; 中身の縦幅*/
+}
+
+/* 登録フォーム */
+input[type="text"], select{
+	margin-bottom:5px;
+}
